@@ -1,0 +1,49 @@
+﻿@model LV7.Models.Patient
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2 class="text-center">Remove Patient</h2>
+<hr />
+<div>
+    <h5 class="fw-bold text-uppercase">Are you sure you want to remove this patient?</h5>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientCode)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index", "Patients", htmlAttributes: new { @class = "btn btn-primary" })
+
+        </div>
+    }
+</div>

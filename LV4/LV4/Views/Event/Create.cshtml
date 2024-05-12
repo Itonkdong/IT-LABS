@@ -1,0 +1,31 @@
+﻿@model LV4.Models.EventModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Creating a new Event</h2>
+
+
+@using (Html.BeginForm("EventInfo", "Event"))
+{
+    <div>
+        New Event Id: @(ViewBag.nextId)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Name)
+        @Html.ValidationMessageFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Location)
+        @Html.ValidationMessageFor(m => m.Location)
+        @Html.TextBoxFor(m => m.Location)
+    </div>
+    <button>Create Event</button>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

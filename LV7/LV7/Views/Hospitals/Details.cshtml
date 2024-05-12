@@ -1,0 +1,42 @@
+﻿@model LV7.Models.Hospital
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 class="text-center">Details For Hospital</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Locationtion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Locationtion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </dt>
+
+        <dd>
+            <img alt="@Model.Name" src="@Model.ImageUrl" width="100" />
+
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", "Hospitals", new { id = Model.Id }, htmlAttributes: new { @class = "btn btn-secondary" }) |
+    @Html.ActionLink("Back to List", "Index", "Hospitals", htmlAttributes: new { @class = "btn btn-primary" })
+</p>

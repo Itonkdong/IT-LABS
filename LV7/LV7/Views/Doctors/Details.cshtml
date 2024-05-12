@@ -1,0 +1,60 @@
+﻿@model LV7.Models.Doctor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 class="text-center">Details For Doctor:</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            Works At:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hospital.Name)
+        </dd>
+
+        <dt>
+            Patients Of Doctor:
+        </dt>
+
+        <dd>
+            @if (Model.Patients.Count == 0)
+            {
+                <strong>No Patients</strong>
+            }
+            else
+            {
+                <ul>
+                    @foreach (var patient in Model.Patients)
+                    {
+                        <li>@Html.ActionLink(patient.Name, "Details", "Patients",new {id = patient.Id}, htmlAttributes: new { @class = "" })</li>
+                    }
+                </ul>
+            }
+        </dd>
+
+    </dl>
+</div>
+
+<div>
+    @Html.ActionLink("Add Patient", "AddPatient", "Doctors", new { id = Model.Id }, htmlAttributes: new { @class = "btn btn-dark" })
+</div>
+<p class="mt-3">
+    @Html.ActionLink("Edit", "Edit", "Doctors", new { id = Model.Id }, htmlAttributes: new { @class = "btn btn-secondary" }) |
+    @Html.ActionLink("Back to List", "Index", "Doctors", htmlAttributes: new { @class = "btn btn-primary" })
+</p>

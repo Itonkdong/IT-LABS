@@ -1,0 +1,23 @@
+﻿@model LV4.Models.EventModel
+
+@{
+    ViewBag.Title = "EventInfo";
+}
+
+<h2>Info About the new Event:</h2>
+<div>
+    <div>
+        @Html.LabelFor(m => m.Id):
+        @Model.Id
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Name):
+        @Model.Name
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Location):
+        @Model.Location
+    </div>
+    @Html.ActionLink("Go back", "allEvents")
+</div>
+
