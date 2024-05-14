@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\LV7",
+    "\\LV7\\Controllers",
     "\\LV7\\Views",
     "\\LV7\\Views\\Hospitals"
   ],
-  "SelectedNode": "\\LV7.sln",
+  "SelectedNode": "\\LV7\\Controllers\\DoctorsController.cs",
   "PreviewInSolutionExplorer": false
 }

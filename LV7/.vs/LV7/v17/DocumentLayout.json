@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\User-PC\\Desktop\\C# 2024\\IT Labs\\LV7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{231F9AA5-7C4D-44C1-984A-F4592185747D}|LV7\\LV7.csproj|c:\\users\\user-pc\\desktop\\c# 2024\\it labs\\lv7\\lv7\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{231F9AA5-7C4D-44C1-984A-F4592185747D}|LV7\\LV7.csproj|solutionrelative:lv7\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User-PC\\Desktop\\C# 2024\\IT Labs\\LV7\\LV7\\Controllers\\DoctorsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LV7\\Controllers\\DoctorsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{231F9AA5-7C4D-44C1-984A-F4592185747D}|LV7\\LV7.csproj|c:\\users\\user-pc\\desktop\\c# 2024\\it labs\\lv7\\lv7\\views\\doctors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{231F9AA5-7C4D-44C1-984A-F4592185747D}|LV7\\LV7.csproj|solutionrelative:lv7\\views\\doctors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User-PC\\Desktop\\C# 2024\\IT Labs\\LV7\\LV7\\App_Start\\RouteConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LV7\\App_Start\\RouteConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{231F9AA5-7C4D-44C1-984A-F4592185747D}|LV7\\LV7.csproj|c:\\users\\user-pc\\desktop\\c# 2024\\it labs\\lv7\\lv7\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{231F9AA5-7C4D-44C1-984A-F4592185747D}|LV7\\LV7.csproj|solutionrelative:lv7\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User-PC\\Desktop\\C# 2024\\IT Labs\\LV7\\LV7\\Views\\Doctors\\Details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LV7\\Views\\Doctors\\Details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "C:\\Users\\User-PC\\Desktop\\C# 2024\\IT Labs\\LV7\\LV7\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "LV7\\App_Start\\RouteConfig.cs",
@@ -34,12 +34,11 @@
               "RelativeToolTip": "LV7\\App_Start\\RouteConfig.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T07:55:37.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T07:55:37.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\User-PC\\Desktop\\C# 2024\\IT Labs\\LV7\\LV7\\Views\\Doctors\\Details.cshtml",
               "RelativeDocumentMoniker": "LV7\\Views\\Doctors\\Details.cshtml",
@@ -47,8 +46,7 @@
               "RelativeToolTip": "LV7\\Views\\Doctors\\Details.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAAC4AAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-14T07:50:57.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T07:50:57.006Z"
             },
             {
               "$type": "Document",
