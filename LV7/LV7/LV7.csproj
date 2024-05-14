@@ -181,6 +181,10 @@
     <Compile Include="Migrations\202405111118504_InitialMigration.Designer.cs">
       <DependentUpon>202405111118504_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405140748002_FixedDoctorModel.cs" />
+    <Compile Include="Migrations\202405140748002_FixedDoctorModel.Designer.cs">
+      <DependentUpon>202405140748002_FixedDoctorModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AppConst.cs" />
@@ -314,6 +318,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202405111118504_InitialMigration.resx">
       <DependentUpon>202405111118504_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405140748002_FixedDoctorModel.resx">
+      <DependentUpon>202405140748002_FixedDoctorModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -42,7 +42,11 @@
                 <ul>
                     @foreach (var patient in Model.Patients)
                     {
-                        <li>@Html.ActionLink(patient.Name, "Details", "Patients",new {id = patient.Id}, htmlAttributes: new { @class = "" })</li>
+                        <li>
+                            @Html.ActionLink(patient.Name, "Details", "Patients", new { id = patient.Id }, htmlAttributes: new { @class = "" })
+                            @Html.ActionLink("Remove", "RemovePatient", "Doctors", new { doctorId = Model.Id, patientId = patient.Id }, htmlAttributes: new { @class = " btn btn-danger" })
+
+                        </li>
                     }
                 </ul>
             }

@@ -110,6 +110,17 @@ namespace LV7.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Hospital hospital = db.Hospitals.Find(id);
+            this.db.Doctors
+                .Include(d => d.Hospital)
+                .Where(d => d.HospitalId == id)
+                .ToList()
+                .ForEach(d =>
+            {
+                d.HospitalId = null;
+                d.Hospital = null;
+                this.db.Entry(d).State = EntityState.Modified;
+            });
+
             db.Hospitals.Remove(hospital);
             db.SaveChanges();
             return RedirectToAction("Index");

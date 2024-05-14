@@ -50,6 +50,28 @@ namespace LV7.Controllers
             return RedirectToAction("Details", "Doctors", new { id = doctor.Id});
         }
 
+        [Route("Doctors/RemovePatient/{doctorId}/{patientId}")]
+        public ActionResult RemovePatient(int doctorId, int patientId)
+        {
+
+            Doctor doctor = this.db.Doctors
+                .Include(d => d.Patients)
+                .Single(d => d.Id == doctorId);
+
+            Patient patient = this.db.Patients
+                .Include(p => p.Doctors)
+                .Single(p => p.Id == patientId);
+
+            doctor.Patients.Remove(patient);
+            patient.Doctors.Remove(doctor);
+
+            this.db.Entry(doctor).State = EntityState.Modified;
+            this.db.Entry(patient).State = EntityState.Modified;
+            this.db.SaveChanges();
+
+            return RedirectToAction("Details", "Doctors", new { id = doctorId });
+        }
+
         // GET: Doctors/Details/5
         public ActionResult Details(int? id)
         {
